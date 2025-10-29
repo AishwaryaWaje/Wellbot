@@ -153,7 +153,7 @@ Wellness-Chatbot/
 Create a `.env` file in the root directory:
 
 ```env
-JWT_SECRET_KEY=your_super_secret_jwt_key_here
+JWT_SECRET=your_super_secret_jwt_key_here
 JWT_ALGORITHM=HS256
 DB_NAME=your_database_name
 ADMIN_EMAIL=admin@gmail.com
