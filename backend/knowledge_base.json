@@ -1,0 +1,383 @@
+{
+  "fever": {
+    "symptoms": ["high temperature", "chills", "sweating", "body aches"],
+    "advice": [
+      "Rest and stay hydrated.",
+      "Monitor your temperature regularly.",
+      "Seek medical help if fever is above 102°F or lasts more than 3 days."
+    ]
+  },
+  "cough": {
+    "symptoms": ["dry cough", "wet cough", "tickling in throat"],
+    "advice": [
+      "Drink warm fluids.",
+      "Use cough syrup if necessary.",
+      "Consult a doctor if cough persists more than a week."
+    ]
+  },
+  "stomach ache": {
+    "symptoms": ["cramps", "bloating", "nausea", "diarrhea"],
+    "advice": [
+      "Avoid solid foods for a few hours.",
+      "Drink clear fluids.",
+      "Use over-the-counter antacids if needed.",
+      "Seek medical help if pain is severe or persistent."
+    ]
+  },
+  "ulser": {
+    "symptoms": ["burning stomach pain", "bloating", "heartburn", "nausea"],
+    "advice": [
+      "Avoid spicy and acidic foods.",
+      "Eat smaller, more frequent meals.",
+      "Consult a healthcare professional for proper diagnosis and treatment."
+    ]
+  },
+  "cold": {
+    "symptoms": ["runny nose", "sneezing", "sore throat", "mild fever"],
+    "advice": ["Get plenty of rest.", "Drink fluids.", "Use over-the-counter remedies if needed."]
+  },
+  "cut": {
+    "symptoms": ["bleeding", "pain", "open wound"],
+    "advice": [
+      "Clean the wound with water.",
+      "Apply pressure to stop bleeding.",
+      "Cover with a sterile bandage.",
+      "Seek medical help for deep or large cuts."
+    ]
+  },
+  "headache": {
+    "symptoms": ["pain in head", "sensitivity to light", "nausea"],
+    "advice": [
+      "Rest in a quiet, dark room.",
+      "Drink water.",
+      "Take over-the-counter pain relievers.",
+      "Seek medical help if headache is severe or persistent."
+    ]
+  },
+  "diarrhea": {
+    "symptoms": ["frequent loose stools", "abdominal cramps", "nausea"],
+    "advice": [
+      "Drink oral rehydration solutions.",
+      "Avoid dairy and fatty foods.",
+      "Seek medical help if diarrhea lasts more than 2 days or is severe."
+    ]
+  },
+  "vomiting": {
+    "symptoms": ["nausea", "retching", "loss of appetite"],
+    "advice": [
+      "Rest and drink small amounts of clear fluids.",
+      "Avoid solid foods until vomiting stops.",
+      "Seek medical help if vomiting persists or is severe."
+    ]
+  },
+  "burn": {
+    "symptoms": ["redness", "pain", "blisters", "swelling"],
+    "advice": [
+      "Cool the burn under running water for 10 minutes.",
+      "Do not apply ice.",
+      "Cover with a clean, non-stick bandage.",
+      "Seek medical help for large or severe burns."
+    ]
+  },
+  "constipation": {
+    "symptoms": ["difficulty passing stool", "abdominal discomfort", "bloating"],
+    "advice": [
+      "Increase fiber and water intake.",
+      "Exercise regularly.",
+      "Use over-the-counter laxatives if needed.",
+      "Consult a doctor if constipation lasts more than a week."
+    ]
+  },
+  "sore throat": {
+    "symptoms": ["pain in throat", "difficulty swallowing", "redness"],
+    "advice": [
+      "Gargle with warm salt water.",
+      "Drink warm fluids.",
+      "Use throat lozenges.",
+      "Seek medical help if sore throat is severe or lasts more than a week."
+    ]
+  },
+  "allergy": {
+    "symptoms": ["sneezing", "itchy eyes", "rash", "runny nose"],
+    "advice": [
+      "Avoid known allergens.",
+      "Take antihistamines.",
+      "Seek medical help if symptoms are severe (e.g., difficulty breathing)."
+    ]
+  },
+  "Hypertension": {
+    "symptoms": ["headache", "shortness of breath", "nosebleeds", "chest pain"],
+    "advice": [
+      "Maintain a healthy diet low in salt.",
+      "Exercise regularly.",
+      "Take prescribed medications.",
+      "Monitor blood pressure regularly."
+    ]
+  },
+  "Asthma": {
+    "symptoms": [
+      "shortness of breath",
+      "wheezing",
+      "coughing",
+      "chest tightness",
+      "breathing problem"
+    ],
+    "advice": [
+      "Avoid asthma triggers.",
+      "Use prescribed inhalers.",
+      "Follow an asthma action plan.",
+      "Seek medical help if symptoms worsen."
+    ]
+  },
+  "Rubella": {
+    "symptoms": ["mild fever", "rash", "swollen lymph nodes", "joint pain"],
+    "advice": [
+      "Rest and stay hydrated.",
+      "Use fever reducers if necessary.",
+      "Seek medical attention if symptoms worsen."
+    ]
+  },
+  "Dengue Fever": {
+    "symptoms": [
+      "high fever",
+      "severe headache",
+      "pain behind the eyes",
+      "joint and muscle pain",
+      "rash"
+    ],
+    "advice": [
+      "Stay hydrated and rest.",
+      "Use pain relievers for fever and pain.",
+      "Seek medical attention if symptoms worsen."
+    ]
+  },
+  "Typhoid Fever": {
+    "symptoms": ["high fever", "weakness", "stomach pain", "headache", "loss of appetite"],
+    "advice": [
+      "Stay hydrated and rest.",
+      "Use antibiotics as prescribed.",
+      "Seek medical attention if symptoms worsen."
+    ]
+  },
+  "Chickenpox": {
+    "symptoms": ["itchy rash", "fever", "fatigue", "loss of appetite"],
+    "advice": [
+      "Keep the skin clean and avoid scratching.",
+      "Use calamine lotion to relieve itching.",
+      "Seek medical attention if symptoms worsen."
+    ]
+  },
+  "Malaria": {
+    "symptoms": ["fever", "chills", "sweats", "headache", "nausea", "vomiting", "body aches"],
+    "advice": [
+      "Take antimalarial medications as prescribed.",
+      "Stay hydrated and rest.",
+      "Seek medical attention if symptoms worsen."
+    ]
+  },
+  "Pneumonia": {
+    "symptoms": ["cough", "fever", "shortness of breath", "chest pain", "fatigue"],
+    "advice": [
+      "Take antibiotics as prescribed.",
+      "Get plenty of rest and stay hydrated.",
+      "Seek medical attention if symptoms worsen."
+    ]
+  },
+  "Bronchitis": {
+    "symptoms": [
+      "cough",
+      "mucus production",
+      "fatigue",
+      "shortness of breath",
+      "slight fever and chills"
+    ],
+    "advice": [
+      "Rest and stay hydrated.",
+      "Use a humidifier to ease breathing.",
+      "Seek medical attention if symptoms worsen."
+    ]
+  },
+  "Sinusitis": {
+    "symptoms": ["facial pain or pressure", "nasal congestion", "runny nose", "headache", "fever"],
+    "advice": [
+      "Use saline nasal sprays.",
+      "Apply warm compresses to the face.",
+      "Seek medical attention if symptoms worsen."
+    ]
+  },
+  "Depression": {
+    "symptoms": [
+      "persistent sadness",
+      "loss of interest",
+      "fatigue",
+      "changes in appetite",
+      "difficulty concentrating"
+    ],
+    "advice": [
+      "Seek support from friends and family.",
+      "Consider therapy or counseling.",
+      "Consult a healthcare professional for medication if necessary."
+    ]
+  },
+  "Anxiety": {
+    "symptoms": [
+      "excessive worry",
+      "restlessness",
+      "fatigue",
+      "difficulty concentrating",
+      "irritability"
+    ],
+    "advice": [
+      "Practice relaxation techniques such as deep breathing or meditation.",
+      "Engage in regular physical activity.",
+      "Seek professional help if anxiety interferes with daily life."
+    ]
+  },
+  "Insomnia": {
+    "symptoms": [
+      "difficulty falling asleep",
+      "frequent awakenings",
+      "daytime fatigue",
+      "irritability"
+    ],
+    "advice": [
+      "Establish a regular sleep schedule.",
+      "Create a comfortable sleep environment.",
+      "Avoid caffeine and electronic devices before bedtime.",
+      "Consult a healthcare professional if insomnia persists."
+    ]
+  },
+  "Bipolar Disorder": {
+    "symptoms": [
+      "mood swings",
+      "periods of mania and depression",
+      "changes in energy levels",
+      "impulsive behavior"
+    ],
+    "advice": [
+      "Seek professional mental health support.",
+      "Consider therapy and medication as prescribed.",
+      "Maintain a stable routine and avoid triggers."
+    ]
+  },
+  "Osteoporosis": {
+    "symptoms": ["bone fractures", "loss of height", "stooped posture", "back pain"],
+    "advice": [
+      "Ensure adequate calcium and vitamin D intake.",
+      "Engage in weight-bearing exercises.",
+      "Consult a healthcare professional for bone density testing and treatment options."
+    ]
+  },
+  "Arthritis": {
+    "symptoms": ["joint pain", "stiffness", "swelling", "reduced range of motion"],
+    "advice": [
+      "Maintain a healthy weight to reduce joint stress.",
+      "Engage in low-impact exercises.",
+      "Use hot or cold therapy to relieve pain.",
+      "Consult a healthcare professional for medication and treatment options."
+    ]
+  },
+  "Gastroenteritis": {
+    "symptoms": ["diarrhea", "vomiting", "abdominal cramps", "fever"],
+    "advice": [
+      "Stay hydrated with oral rehydration solutions.",
+      "Avoid solid foods until vomiting stops.",
+      "Seek medical attention if symptoms worsen or persist."
+    ]
+  },
+  "Migraine": {
+    "symptoms": [
+      "severe headache",
+      "nausea",
+      "sensitivity to light and sound",
+      "visual disturbances"
+    ],
+    "advice": [
+      "Rest in a quiet, dark room.",
+      "Use over-the-counter pain relievers.",
+      "Identify and avoid migraine triggers.",
+      "Consult a healthcare professional for preventive treatments if migraines are frequent."
+    ]
+  },
+  "Eczema": {
+    "symptoms": ["itchy skin", "redness", "dry patches", "inflammation"],
+    "advice": [
+      "Moisturize skin regularly.",
+      "Avoid irritants and allergens.",
+      "Use prescribed topical treatments.",
+      "Consult a healthcare professional for severe cases."
+    ]
+  },
+  "Psoriasis": {
+    "symptoms": ["red patches of skin", "silvery scales", "itching", "dryness"],
+    "advice": [
+      "Moisturize skin regularly.",
+      "Avoid triggers such as stress and infections.",
+      "Use prescribed topical or systemic treatments.",
+      "Consult a healthcare professional for severe cases."
+    ]
+  },
+  "Fibromyalgia": {
+    "symptoms": ["widespread pain", "fatigue", "sleep disturbances", "cognitive difficulties"],
+    "advice": [
+      "Engage in regular low-impact exercise.",
+      "Practice stress management techniques.",
+      "Use prescribed medications for pain and sleep.",
+      "Consult a healthcare professional for a comprehensive treatment plan."
+    ]
+  },
+  "Gallstones": {
+    "symptoms": ["abdominal pain", "nausea", "vomiting", "indigestion"],
+    "advice": [
+      "Maintain a healthy diet low in fat.",
+      "Avoid large meals and eat smaller, more frequent meals.",
+      "Seek medical attention if symptoms worsen or if there is severe abdominal pain."
+    ]
+  },
+  "Kidney Stones": {
+    "symptoms": ["severe pain in back or side", "blood in urine", "frequent urination", "nausea"],
+    "advice": [
+      "Drink plenty of water to help pass the stone.",
+      "Use pain relievers as needed.",
+      "Seek medical attention if pain is severe or if there are signs of infection."
+    ]
+  },
+  "Hypothyroidism": {
+    "symptoms": ["fatigue", "weight gain", "cold intolerance", "dry skin", "constipation"],
+    "advice": [
+      "Take prescribed thyroid hormone replacement therapy.",
+      "Maintain a balanced diet and regular exercise.",
+      "Consult a healthcare professional for regular monitoring of thyroid levels."
+    ]
+  },
+  "Hyperthyroidism": {
+    "symptoms": [
+      "weight loss",
+      "heat intolerance",
+      "nervousness",
+      "rapid heartbeat",
+      "increased appetite"
+    ],
+    "advice": [
+      "Take prescribed antithyroid medications.",
+      "Avoid excessive iodine intake.",
+      "Consult a healthcare professional for regular monitoring of thyroid levels."
+    ]
+  },
+  "Gastritis": {
+    "symptoms": ["abdominal pain", "nausea", "vomiting", "bloating"],
+    "advice": [
+      "Avoid spicy and acidic foods.",
+      "Eat smaller, more frequent meals.",
+      "Consult a healthcare professional for proper diagnosis and treatment."
+    ]
+  },
+  "dehydration": {
+    "symptoms": ["dry mouth", "fatigue", "dizziness", "dark urine"],
+    "advice": [
+      "Drink plenty of water.",
+      "Avoid caffeinated beverages.",
+      "If symptoms are severe, seek medical attention."
+    ]
+  }
+}
