@@ -12,6 +12,7 @@ import {
   FaTimes,
   FaQuoteLeft,
 } from "react-icons/fa";
+import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
 const AdminDashboard = () => {
   const [stats, setStats] = useState({});
@@ -103,6 +104,13 @@ const AdminDashboard = () => {
     setNewDisease({ name: "", symptoms: "", advice: "" });
   };
 
+  const feedbackData = [
+    { name: "Positive", value: parseInt(stats.positive?.toString().replace(/\D/g, "")) || 0 },
+    { name: "Negative", value: parseInt(stats.negative?.toString().replace(/\D/g, "")) || 0 },
+  ];
+  const COLORS = ["#34d399", "#f87171"];
+  console.log("Feedback Data:", feedbackData);
+
   return (
     <div className="min-h-screen bg-gray-50 p-8">
       <div className="flex items-center justify-between mb-10">
@@ -117,30 +125,60 @@ const AdminDashboard = () => {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-        <div className="bg-white rounded-xl shadow-md p-5 border-t-4 border-emerald-500">
-          <div className="flex items-center gap-2 mb-2 text-emerald-700 font-semibold">
-            <FaUser /> Total Users
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="bg-white rounded-xl shadow-md p-5 border-t-4 border-emerald-500">
+            <div className="flex items-center gap-2 mb-2 text-emerald-700 font-semibold">
+              <FaUser /> Total Users
+            </div>
+            <p className="text-2xl font-bold text-emerald-800">{stats.users || 0}</p>
           </div>
-          <p className="text-2xl font-bold text-emerald-800">{stats.users || 0}</p>
+
+          <div className="bg-white rounded-xl shadow-md p-5 border-t-4 border-green-500">
+            <div className="flex items-center gap-2 mb-2 text-green-700 font-semibold">
+              <FaSmile /> Positive Reviews
+            </div>
+            <p className="text-2xl font-bold text-green-800">{stats.positive || 0}</p>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-md p-5 border-t-4 border-red-500">
+            <div className="flex items-center gap-2 mb-2 text-red-700 font-semibold">
+              <FaFrown /> Negative Reviews
+            </div>
+            <p className="text-2xl font-bold text-red-800">{stats.negative || 0}</p>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-md p-5 border-t-4 border-blue-500">
+            <div className="flex items-center gap-2 mb-2 text-blue-700 font-semibold">
+              <FaVirus /> Total Diseases
+            </div>
+            <p className="text-2xl font-bold text-blue-800">{stats.diseases || 0}</p>
+          </div>
         </div>
-        <div className="bg-white rounded-xl shadow-md p-5 border-t-4 border-green-500">
-          <div className="flex items-center gap-2 mb-2 text-green-700 font-semibold">
-            <FaSmile /> Positive Reviews
+
+        <div className="bg-white rounded-xl shadow-md p-6">
+          <h2 className="text-lg font-semibold text-emerald-800 mb-4">Feedback Overview</h2>
+          <div className="w-full h-64">
+            <ResponsiveContainer>
+              <PieChart>
+                <Pie
+                  data={feedbackData}
+                  cx="50%"
+                  cy="50%"
+                  labelLine={false}
+                  label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                  outerRadius={80}
+                  fill="#8884d8"
+                  dataKey="value">
+                  {feedbackData.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index]} />
+                  ))}
+                </Pie>
+                <Tooltip />
+                <Legend />
+              </PieChart>
+            </ResponsiveContainer>
           </div>
-          <p className="text-2xl font-bold text-green-800">{stats.positive || 0}</p>
-        </div>
-        <div className="bg-white rounded-xl shadow-md p-5 border-t-4 border-red-500">
-          <div className="flex items-center gap-2 mb-2 text-red-700 font-semibold">
-            <FaFrown /> Negative Reviews
-          </div>
-          <p className="text-2xl font-bold text-red-800">{stats.negative || 0}</p>
-        </div>
-        <div className="bg-white rounded-xl shadow-md p-5 border-t-4 border-blue-500">
-          <div className="flex items-center gap-2 mb-2 text-blue-700 font-semibold">
-            <FaVirus /> Total Diseases
-          </div>
-          <p className="text-2xl font-bold text-blue-800">{stats.diseases || 0}</p>
         </div>
       </div>
 
