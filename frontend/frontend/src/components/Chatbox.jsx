@@ -92,9 +92,7 @@ const ChatBox = ({ user, onLogout, onUpdateProfile, onFeedback }) => {
     );
   };
 
-  // ✅ Helper: format bot messages (convert lists or bullets into separate lines)
   const renderMessageText = (text) => {
-    // Split text by new lines if backend sends `\n`
     if (text.includes("\n")) {
       return text.split("\n").map((line, i) => (
         <p key={i} className="leading-relaxed">
@@ -103,7 +101,6 @@ const ChatBox = ({ user, onLogout, onUpdateProfile, onFeedback }) => {
       ));
     }
 
-    // Split text by bullet points if backend sends with '-'
     if (text.includes("- ")) {
       return text.split("- ").map(
         (line, i) =>
@@ -115,7 +112,6 @@ const ChatBox = ({ user, onLogout, onUpdateProfile, onFeedback }) => {
       );
     }
 
-    // Default fallback (single line)
     return <p className="leading-relaxed">{text}</p>;
   };
 
@@ -123,7 +119,7 @@ const ChatBox = ({ user, onLogout, onUpdateProfile, onFeedback }) => {
     <div className="h-screen w-screen bg-white flex flex-col items-center justify-between font-[Poppins] relative overflow-hidden">
       <header className="w-full flex justify-between items-center px-10 py-4 bg-white shadow-md fixed top-0 z-20">
         <h1 className="text-3xl font-semibold text-teal-700 flex items-center gap-2">
-          💬 Health & Wellness Chatbot
+          Health & Wellness Chatbot
         </h1>
 
         <div className="relative">

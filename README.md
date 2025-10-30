@@ -67,12 +67,6 @@ A modern, interactive wellness chatbot built with React, Tailwind CSS and FastAP
    - Backend API: http://localhost:8000
    - API Documentation: http://localhost:8000/docs
 
-## 🌍 Live Deployment
-
-The application is live and accessible at:
-
-👉 [https://your-cloud-app-url.com](https://your-cloud-app-url.com)
-
 ## 📁 Project Structure
 
 ```
